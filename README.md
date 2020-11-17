@@ -35,3 +35,7 @@
   * **Overview:** We preprocess the Reddit data released by [pushshift.io](https://files.pushshift.io/reddit/) corresponding to December 2017.
   * **Details:** 1,660,820 users with a total of 56,587,343 comments. 
   * **Task:** Next-word Prediction.
+
+7. CIFAR 10 / CIFAR 100
+
+- CIFAR10 and CIFAR100 are image classification datasets with 60,000 32 × 32px color images distributed evenly over 10 and 100 classes respectively (50,000/10,000 train/test split). They are benchmark computer vision datasets, and although they lack a natural noni.i.d. partitioning, we artificially create one by giving each client images from only a single class.  (from FetchSGD)
