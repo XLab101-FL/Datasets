@@ -10,8 +10,52 @@
 2. Sentiment140
 
   * **Overview:** Text Dataset of Tweets
+
   * **Details** 660120 users
+
   * **Task:** Sentiment Analysis
+
+  * **数据格式**
+
+      * 训练集
+
+          * ```json
+            {
+                "users": ["michelleemilie", "Norri"],
+                "num_samples": [2, 2],
+                "user_data": {
+                    "michelleemilie": {
+                        "x": [["1983468420", "Sun May 31 13:12:51 PDT 2009", "NO_QUERY", "michelleemilie", "Headache, but I'll fix that soon. Leaving in about an hour ", "training"], 
+                            ["2181302206", "Mon Jun 15 11:38:37 PDT 2009", "NO_QUERY", "michelleemilie", "http://twitpic.com/7hcjq - Ice Age 3! I cant wait to see that movie ", "training"]],
+                        "y": [1, 1]},
+                    "Norri": {
+                        "x": [["1960390654", "Fri May 29 07:53:22 PDT 2009", "NO_QUERY", "Norri", "Just learned the first 30 seconds of Satriani's &quot;Ten Words&quot; by ear. Took me over an hour. I sure hope this gets easier as I go along ", "training"], 
+                            ["1990316264", "Mon Jun 01 04:31:44 PDT 2009", "NO_QUERY", "Norri", "Fingers are freezing, time for my hobo gloves ", "training"]], 
+                        "y": [1, 1]}
+                }  
+            }
+            ```
+
+    * 测试集
+
+      * ```json
+        {
+            "users": ["michelleemilie", "Norri"],
+            "num_samples": [1, 1],
+            "user_data": {
+                "michelleemilie": {
+                    "x": [["2056916213", "Sat Jun 06 12:02:02 PDT 2009", "NO_QUERY", "michelleemilie", "I've got a damn headache  wtf.", "training"]],
+                    "y": [0]},
+                "Norri": {
+                    "x": [["1960397056", "Fri May 29 07:53:59 PDT 2009", "NO_QUERY", "Norri", "@robzonenet Always a pleasure ", "training"]],
+                    "y": [1]}
+            }  
+        }
+        ```
+
+        
+
+
 
 3. Shakespeare
 
