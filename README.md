@@ -172,3 +172,15 @@ EMNIST 主要分为以下 6 类：
 * Details：这两个数据集包含用户的一些属性，例如性别、受教育程度等，Credit 1包含150000个样本10个属性，Credit 2包含30000个样本25个属性，学习目标是预测用户是否会还款违约
 * Task：分类
 * 适用联邦学习场景：可用于纵向联邦（在论文SecureBoost，作者将该数据集手动竖直切分，应用到纵向联邦学习）
+
+
+12. ModelNet
+
+  * **Overview:** 图像分类数据集，所有图像都是来自于3D模型的各种视图。
+  * **URL:** 
+      * https://dataset.fedai.org/#/datasetmodel
+	  * https://modelnet.cs.princeton.edu/#
+  * **Details:** Fed_ModelNet40包含来自40个类别的2311个3D模型的各种视角的视图,Fed_ModelNet40.zip包含所有图像数据, 来自每个类别的图像位于一个具有相应类别名称的子文件夹中。在每个子文件夹中，图像进一步分为“ train”和“ test”文件夹。
+  * **数据处理:** Fed_ModelNet40.zip里面是3D模型的原数据，是OFF格式的数据。需要通过开源软件blender将CAD模型转换为图像。
+  * **Task:** 图像分类
+  * **适用联邦学习场景：** 适用于横向联邦，模拟不同用户从不同拍摄的照片。
