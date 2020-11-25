@@ -9,29 +9,6 @@
 
   * 
 
-## EMNIST
-
-`EMNIST`全名`Extended MNIST`，这是一个包含英文字母+数字的数据集
-
-## EMNIST分类方式
-
-EMNIST 主要分为以下 6 类：
-
-- By_Class ： 共 814255 张，62 类，训练集 697932 张，测试集 116323 张
-- By_Merge： 共 814255 张，47 类，训练集 697932 张，测试集 116323 张
-- Balanced : 共 131600 张，47 类，训练集 112800 张，测试集 18800 张
-- Digits ：共 28000 张，10 类，训练集 240000 张，测试集 40000 张
-- Letters : 共 103600 张，37 类，训练集 88800 张，测试集 14800 张
-- MNIST ： 共 70000 张，10 类，训练集 60000 张，测试集 10000 张
-
-**SCAFFOLD**
-
-  * Karimireddy divides [EMNIST](https://arxiv.org/abs/1702.05373v1) among N = 100 clients as follows: for s% similar data we allocate to each client s% i.i.d. data and the remaining (100-s)% by sorting according to label(cf. Hsu et al. (2019)). (from SCAFFOLD) 
-  * 在这个工作中作者认为给客户端分配数据时，如果more shuffled，意味着客户端之间数据分布越相似。0% similarity意味着按标签排序后再进行分配，此时数据异质性很高。100% similarity意味着完全随机地打乱数据，此时数据时独立同分布的（即每个客户端中含有的标签都差不多）
-  * 不过文章中没有具体讲用的是哪种类型的EMNIST
-  * EMNIST数据集：[下载地址](https://www.westernsydney.edu.au/bens/home/reproducible_research/emnist)
-
-
 
 2. Sentiment140
 
@@ -142,4 +119,27 @@ The computation of the average precision (AP) measure has been changed in VOC201
 $$
   mAP = \frac{\Sigma_{i = 1}^kAP_i}{k}
 $$
+
+9. EMNIST
+
+`EMNIST`全名`Extended MNIST`，这是一个包含英文字母+数字的数据集
+
+**EMNIST分类方式**
+
+EMNIST 主要分为以下 6 类：
+
+- By_Class ： 共 814255 张，62 类，训练集 697932 张，测试集 116323 张
+- By_Merge： 共 814255 张，47 类，训练集 697932 张，测试集 116323 张
+- Balanced : 共 131600 张，47 类，训练集 112800 张，测试集 18800 张
+- Digits ：共 28000 张，10 类，训练集 240000 张，测试集 40000 张
+- Letters : 共 103600 张，37 类，训练集 88800 张，测试集 14800 张
+- MNIST ： 共 70000 张，10 类，训练集 60000 张，测试集 10000 张
+
+**SCAFFOLD**
+
+  * Karimireddy divides [EMNIST](https://arxiv.org/abs/1702.05373v1) among N = 100 clients as follows: for s% similar data we allocate to each client s% i.i.d. data and the remaining (100-s)% by sorting according to label(cf. Hsu et al. (2019)). (from SCAFFOLD) 
+  * 在这个工作中作者认为给客户端分配数据时，如果more shuffled，意味着客户端之间数据分布越相似。0% similarity意味着按标签排序后再进行分配，此时数据异质性很高。100% similarity意味着完全随机地打乱数据，此时数据时独立同分布的（即每个客户端中含有的标签都差不多）
+  * 不过文章中没有具体讲用的是哪种类型的EMNIST
+  * EMNIST数据集：[下载地址](https://www.westernsydney.edu.au/bens/home/reproducible_research/emnist)
+
 
