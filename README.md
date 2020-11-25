@@ -91,6 +91,7 @@
 A real-world object detection dataset that annotates images captured by a set of street cameras based on object present in them, including 7 object categories. In this dataset, each or every few cameras serve as a device. Thec federated street dataset captures common objects on the streets by CCTV cameras, including motobikes, buckets, umbrella, and so on.
 
 * **Details:** 
+
 |  Dataset |  number of devices | Total samples | number of categories|
 |  ----  | ----  |  ----  | ----  |
 | Street | 5,20| 956| 7|
