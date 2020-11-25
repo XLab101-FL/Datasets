@@ -8,8 +8,6 @@
   * Federated EMNIST is an image classification dataset with 62 classes (upper- and lower-case letters, plus digits) (Caldas et al., 2018), which is formed by partitioning the EMNIST dataset (Cohen et al., 2017) such that each client in FEMNIST contains characters written by a single person. （from FetchSGD）
 
 
-
-
 2. Sentiment140
 
   * **Overview:** Text Dataset of Tweets
@@ -56,15 +54,36 @@
         }
         ```
 
-        
-
-
 
 3. Shakespeare
 
-  * **Overview:** Text Dataset of Shakespeare Dialogues
-  * **Details:** 1129 users (reduced to 660 with our choice of sequence length. See [bug](https://github.com/TalwalkarLab/leaf/issues/19).)
+  * **Overview:** Text Dataset of Shakespeare Dialogues， Shakespeare, a dataset built from The Complete Works of William Shakespeare. Here, each speaking role in each play is considered a different device.
+
+  * **Details:** 1129 users (reduced to 660 with our choice of sequence length. See [bug](https://github.com/TalwalkarLab/leaf/issues/19).)， 
+
   * **Task:** Next-Character Prediction
+
+  * 地址：http://www.gutenberg.org/files/100/old/1994-01-100.zip
+
+  * 数据格式：
+
+  * ```json
+                         8
+      Music to hear, why hear'st thou music sadly?
+      Sweets with sweets war not, joy delights in joy:
+      Why lov'st thou that which thou receiv'st not gladly,
+      Or else receiv'st with pleasure thine annoy?
+      If the true concord of well-tuned sounds,
+      By unions married do offend thine ear,
+      They do but sweetly chide thee, who confounds
+      In singleness the parts that thou shouldst bear:
+      Mark how one string sweet husband to another,
+      Strikes each in each by mutual ordering;
+      Resembling sire, and child, and happy mother,
+      Who all in one, one pleasing note do sing:
+        Whose speechless song being many, seeming one,
+        Sings this to thee, 'Thou single wilt prove none'.
+    ```
 
 4. Celeba
 
