@@ -7,7 +7,7 @@
   * **Task:** Image Classification
   * Federated EMNIST is an image classification dataset with 62 classes (upper- and lower-case letters, plus digits) (Caldas et al., 2018), which is formed by partitioning the EMNIST dataset (Cohen et al., 2017) such that each client in FEMNIST contains characters written by a single person. （from FetchSGD）
 
-  * 
+
 
 
 2. Sentiment140
@@ -143,3 +143,32 @@ EMNIST 主要分为以下 6 类：
   * EMNIST数据集：[下载地址](https://www.westernsydney.edu.au/bens/home/reproducible_research/emnist)
 
 
+
+
+10. MovieLens
+* Overview: 结构化数据
+* URL:
+  * 官网：https://grouplens.org/datasets/movielens/
+  * MovieLens Latest:http://files.grouplens.org/datasets/movielens/ml-latest.zip
+  * MovieLens 25M:http://files.grouplens.org/datasets/movielens/ml-25m.zip
+  * MovieLens 1M:http://files.grouplens.org/datasets/movielens/ml-1m.zip
+* Details:数据集包含了用户对某些视频的评分和视频相关的一些标签属性，其中评分分为5个等级。MovieLens 25M里面还有用户对视频的文本评价，MovieLens 1M里面包含用户的相关信息。
+* Task：推荐系统
+* 数据容量：MovieLens 1M包含1000209个匿名用户对3900个视频的评分
+* 适用联邦学习场景：由于用户信息、视频信息和评分表都是天然分开的，适用于纵向联邦
+* 数据格式：
+  * ratings.dat:UserID|MovieID|Rating|Timestamp
+  * users.dat:UserID|Gender|Age|Occupation|Zip-code
+  * movies.dat:MovieID|Title|Genres
+
+
+
+11. Credit
+* Overview: 结构化数据
+* URL:
+  * Credit 1：https://www.kaggle.com/c/GiveMeSomeCredit/data
+  * Credit 2： https://www.kaggle.com/uciml/default-of-credit-card-clients-dataset
+* 相关论文：SecureBoost: A Lossless Federated Learning Framework
+* Details：这两个数据集包含用户的一些属性，例如性别、受教育程度等，Credit 1包含150000个样本10个属性，Credit 2包含30000个样本25个属性，学习目标是预测用户是否会还款违约
+* Task：分类
+* 适用联邦学习场景：可用于纵向联邦（在论文SecureBoost，作者将该数据集手动竖直切分，应用到纵向联邦学习）
