@@ -203,3 +203,9 @@ EMNIST 主要分为以下 6 类：
   * **数据处理:** Fed_ModelNet40.zip里面是3D模型的原数据，是OFF格式的数据。需要通过开源软件blender将CAD模型转换为图像。
   * **Task:** 图像分类
   * **适用联邦学习场景：** 适用于横向联邦，模拟不同用户从不同拍摄的照片。
+
+13. PersonaChat
+
+- overview: 这是一个聊天数据集
+- 划分方式：Natural non-i.i.d. partitioning into 17,568 clients based on the personality that was assigned.
+- The non-i.i.d. nature of PersonaChat comes from the fact that different Mechanical Turk workers were provided with different “personalities,” which are short snippets, written in English, containing a few salient characteristics of a fictional character. 
