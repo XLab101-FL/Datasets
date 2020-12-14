@@ -209,3 +209,8 @@ EMNIST 主要分为以下 6 类：
 - overview: 这是一个聊天数据集
 - 划分方式：Natural non-i.i.d. partitioning into 17,568 clients based on the personality that was assigned.
 - The non-i.i.d. nature of PersonaChat comes from the fact that different Mechanical Turk workers were provided with different “personalities,” which are short snippets, written in English, containing a few salient characteristics of a fictional character. 
+
+14. KWS
+
+- overview: Speech Commands: A dataset for limited-vocabulary speech recognition.
+- link:  P. Warden, “Speech commands: A dataset for limited-vocabulary speech recognition,” arXiv preprint arXiv:1804.03209, 2018.
