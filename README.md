@@ -218,4 +218,4 @@ EMNIST 主要分为以下 6 类：
 14. Flickr
 
 - overview: Personalized image aesthetics dataset.
-- link:  Federated Learning with Personalized Layers.
+- link:  Federated Learning with Personalized Layers. http://www.flickr.com
