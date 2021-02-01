@@ -214,3 +214,8 @@ EMNIST 主要分为以下 6 类：
 
 - overview: Speech Commands: A dataset for limited-vocabulary speech recognition.
 - link:  P. Warden, “Speech commands: A dataset for limited-vocabulary speech recognition,” arXiv preprint arXiv:1804.03209, 2018.
+
+14. Flickr
+
+- overview: Personalized image aesthetics dataset.
+- link:  Federated Learning with Personalized Layers.
